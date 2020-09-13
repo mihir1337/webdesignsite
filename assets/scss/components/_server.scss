@@ -1,0 +1,19 @@
+/*Server css*/
+.server-link {
+    @include d-flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        font-weight: 600;
+        color: $black;
+    }
+    .icon {
+        padding-right: 10px;
+    }
+    span {
+        padding-left: 10px;
+        img {
+            transform: translateY(3px);
+        }
+    }
+}

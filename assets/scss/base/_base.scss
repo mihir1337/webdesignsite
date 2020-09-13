@@ -1,0 +1,76 @@
+@import "./_reset";
+
+/* global css start */
+.nice-select {
+	background-color: transparent;
+	height: 40px !important;
+	line-height: 40px !important;
+	min-height: 40px !important;
+	padding: 0 30px;
+	span {
+		color: $primary-color;
+	}
+	.list {
+		@include shadow1;
+		li {
+			margin-right: 0 !important;
+		}
+		.option {
+			color: $primary-color;
+			&.selected,
+			&:hover {
+				border: none !important;
+			}
+		}
+	}
+}
+
+/* global css end */
+.bg_img{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.grey-bg {
+	background: $grey;
+}
+
+.white {
+  color: $white;
+}
+
+.f-right {
+  float: right;
+}
+
+.section-heading {
+	text-align: center;
+	h2 {
+		font-size: 30px;
+		font-weight: 700;
+		margin-bottom: 30px;
+		display: block;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	a {
+		font-weight: 700;
+		color: #00E4C7;
+		position: relative;
+		&::after {
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			bottom: 0px;
+			left: 0;
+			content: "";
+			background: #00E4C7;
+		}
+	}
+}

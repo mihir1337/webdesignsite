@@ -1,0 +1,131 @@
+/*Server page css*/
+.server-banner {
+    min-height: 925px;
+    padding-top: 160px;
+    background-position: center bottom;
+}
+
+.server-banner {
+    .section-heading {
+        h2 {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.frequency-area {
+    .section-heading {
+        img {
+            margin-bottom: 20px;
+        }
+        h2 {
+            line-height: 30px;
+            font-weight: 900;
+        }
+    }
+}
+
+.pricing-area {
+    .section-heading {
+        h2 {
+            text-transform: capitalize;
+        }
+    }
+}
+
+.pricing-wrap {
+    box-shadow: 0px 5px 43px 0px rgba(77, 77, 77, 0.15);
+    border-radius: 10px;
+    .pricing-head {
+        ul {
+            @include d-flex;
+            justify-content: space-between;
+            padding: 25px 70px;
+            li {
+                font-size: 14px;
+            }
+        }
+    }
+    .pricing-build {
+        padding-top: 30px;
+        padding-bottom: 35px;
+        ul {
+            padding: 0px 70px;
+            @include d-flex;
+            justify-content: space-between;
+            li {
+                font-weight: 700;
+                font-size: 30px;
+                color: $white;
+            }
+        }
+        .build-server {
+            padding-top: 25px;
+            border-top: 1px solid $white;
+            margin-top: 45px;
+        }
+        .site-btn {
+            border-color: $white;
+            border-image: none;
+            &:hover {
+                border-color: $theme-color;
+            }
+        }
+    }
+    .pricing-list {
+        ul {
+            margin: 0px 30px;
+            padding: 18px 40px;
+            padding-top: 30px;
+            @include d-flex;
+            justify-content: space-between;
+            li {
+                font-weight: 700;
+                font-size: 30px;
+                color: $black;
+                line-height: 21px;
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid #D7D7D7;
+            }
+        }
+        padding-bottom: 30px;
+    }
+}
+
+.custom-server {
+    padding-top: 510px;
+    background-position: center bottom;
+    .section-heading {
+        text-align: left !important;
+        h2 {
+            line-height: 33px;
+            font-size: 30px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.addon-area {
+    .section-heading {
+        text-align: left !important;
+        h2 {
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.single-addon {
+    .icon {
+        @include d-flex;
+        align-items: center;
+        h4 {
+            padding-left: 15px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+}

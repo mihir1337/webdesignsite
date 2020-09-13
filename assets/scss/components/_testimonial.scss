@@ -1,0 +1,34 @@
+/*testimonial css*/
+.testimonial {
+    .item {
+        text-align: center;
+        .thumb {
+            border-radius: 50%;
+            margin-bottom: 30px;
+            img {
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+        .content {
+            p {
+                line-height: 25px;
+                font-weight: 600;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+/*Partner css*/
+.partner {
+    .item {
+        min-height: 200px;
+        @include d-flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+/*Banner css*/
+
+.banner-area {
+    position: relative;
+    padding-top: 300px;
+    padding-bottom: 285px;
+    height: 800px;
+}
+
+.bg-video {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 800px;
+    video {
+        width: 100%;
+    }
+}
+
+.bannertext {
+    .banner-ttile {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 25px;
+        color: $white;
+    }
+    p {
+        font-size: 16px;
+        line-height: 25px;
+        color: $white;
+    }
+    .banner-btns {
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        .transparent {
+            margin-left: 45px;
+            &:hover {
+                color: $theme-color;
+            }
+            &:hover::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    right: 15%;
+    bottom: 15px;
+}
+

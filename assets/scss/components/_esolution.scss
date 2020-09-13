@@ -1,0 +1,140 @@
+/*esolution-area css*/
+.esolution {
+    &__box {
+        .icon {
+            margin-bottom: 15px;
+        }
+        .content {
+            h4 {
+                font-size: 30px;
+                color: $primary-color;
+                margin-bottom: 15px;
+                display: inline-block;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .small {
+                font-size: 18px;
+            }
+            p {
+                line-height: 24px;
+                font-size: 14px;
+            }
+        }
+    }
+    &__service {
+        margin-top: 25px;
+        li {
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            img {
+                margin-right: 15px;
+            }
+            a {
+                color: $theme-color;
+                position: relative;
+                display: inline-block;
+                &:hover {
+                    color: #02E3C5;
+                    &::after {
+                        background: #02E3C5;;
+                    }
+                }
+                &::after {
+                    height: 1px;
+                    width: 100%;
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0px;
+                    background: $theme-color;
+                }
+            }
+        }
+    }
+    &__lists {
+        margin-top: 30px;
+        ul {
+            @include d-flex;
+            margin-top: -20px;
+            li {
+                font-weight: 600;
+                position: relative;
+                display: block;
+                margin-top: 20px;
+                padding-left: 15px;
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+                &::after {
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    left: 0;
+                    top: 8px;
+                    content: "";
+                    background: #00E4C7;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    .site-btn {
+        color: $primary-color;
+        &:hover {
+            color: $white;
+            background: $theme-color;
+        }
+    }
+}
+
+.esolution.white {
+    .content {
+        h4 {
+            color: $white;
+        }
+        p {
+            color: $white;
+        }
+    }
+    .esolution__service {
+        ul {
+            li {
+                a {
+                    color: $white;
+                    &::after {
+                        background: $white;
+                    }
+                }
+            }
+        }
+    }
+    .esolution__lists {
+        margin-top: 40px;
+        ul {
+            li {
+                color: $white;
+                font-size: 14px;
+                font-weight: 600;
+                &::after {
+                    background: $white;
+                }
+            }
+        }
+    }
+    .site-btn {
+        color: $white;
+        border-image: none;
+        border-color: $white;
+        &:hover {
+            color: $white;
+            border-color: #02E3C5;
+        }
+        &:hover::after {
+            background: #02E3C5;
+        }
+    }
+}

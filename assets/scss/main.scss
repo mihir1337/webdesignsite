@@ -1,0 +1,49 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: SiteName - Multipurpose Technology HTML5 Template
+    Template URI: site.com
+    Description: SiteName - Multipurpose Technology HTML5 Template
+    Author: BasicTheme
+    Author URI: site.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+	01. Theme default CSS
+
+-----------------------------------------------------------------------------------*/
+// abstracts scss
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base scss
+@import "./base/base";
+@import "./base/spacing";
+@import "./base/typography";
+@import "./base/overlay";
+
+// layout scss
+@import "./layout/header";
+@import "./layout/navigation";
+ 
+// components scss
+@import "./components/form";
+@import "./components/button";
+@import "./components/banner";
+@import "./components/comparison";
+@import "./components/esolution";
+@import "./components/template";
+@import "./components/server";
+@import "./components/testimonial";
+@import "./components/service-slide";
+
+// pages scss
+@import "./pages/service-page"; 
+@import "./pages/server-page"; 
+
+// layout scss
+@import "./layout/footer"; 
+

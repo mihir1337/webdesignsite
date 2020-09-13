@@ -1,0 +1,113 @@
+/*Footer css*/
+.site-footer {
+    background: $primary-color;
+    padding-top: 50px;
+}
+
+.footer-menu {
+    margin-bottom: 60px;
+    ul {
+        @include d-flex;
+        justify-content: center;
+        li {
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+            a {
+                font-size: 14px;
+                color: $white;
+                display: block;
+                font-weight: 600;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.contact-info {
+    text-align: center;
+    h4 {
+        text-transform: uppercase;
+        color: #00E4C7;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    p {
+        line-height: 24px;
+        font-size: 14px;
+        color: $white;
+    }
+}
+
+.review {
+    @include d-flex;
+    align-items: center;
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        color: $white;
+    }
+    img {
+        margin-left: 30px;
+    }
+}
+
+.whatsapp {
+    @include d-flex;
+    align-items: center;
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        color: $white;
+    }
+    img {
+        padding-left: 15px;
+    }
+}
+
+.social-links-wrap {
+    @include d-flex;
+    align-items: center;
+    justify-content: flex-end;
+    p {
+        color: $white;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.social-links {
+    @include d-flex;
+    align-items: center;
+    margin-left: 15px;
+    a {
+        width: 21px;
+        height: 21px;
+        text-align: center;
+        background-image: linear-gradient( 90deg, #29B8FB 0%, #00E3C7 100% );
+        display: block;
+        color: $black;
+        font-size: 14px;
+        line-height: 21px;
+        &:hover {
+            background-image: none;
+            background: #00E4C7;
+            color: $white;
+        }
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
+
+.copyright-text {
+    margin-bottom: 25px;
+    text-align: right;
+    p {
+        color: $white;
+        font-size: 11px;
+    }
+}

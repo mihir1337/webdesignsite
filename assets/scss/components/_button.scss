@@ -1,0 +1,152 @@
+.site-btn {
+    display: inline-block;
+    padding: 9px 18px;
+    color: $white;
+    font-weight: 700;
+    border: 3px solid transparent;
+    font-family: $defaultfont;
+    border-image: linear-gradient( 45deg, rgba(76, 188, 211, 1) 0%, rgba(1, 140, 196, 1) 100% );
+    border-image-slice: 1;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    @include transition(.3s);
+    &::after {
+        background: $theme-color;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        content: "";
+        opacity: 1;
+        visibility: hidden;
+        @include transition(.3s);
+        z-index: -1;
+    }
+    &:hover {
+        color: $white;
+        border-image: none;
+        border-color: $theme-color;
+        &::after {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    & span {
+        color: $white;
+        margin-left: 15px;
+        @media (max-width: 430px) {
+            margin-left: 10px;
+        }
+    }
+}
+
+.site-btn.transparent {
+    background: transparent;
+    color: $white;
+    position: relative;
+    border: 2px solid transparent;
+    & span {
+        color: $primary-color;
+    }
+    &:hover {
+        color: $white;
+        border-color: transparent;
+        & span {
+            color: $white;
+        }
+    }
+}
+
+.site-btn.white {
+    color: $white;
+    border-color: $white;
+    span {
+        color: $white;
+    }
+}
+
+.inline-btn {
+    color: $primary-color;
+    font-weight: 700;
+    font-family: $defaultfont;
+    display: inline-block;
+    &:hover {
+        color: $theme-color;
+    }
+}
+
+.video-icon-wrap {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    @include d-flex;
+    align-items: center;
+    justify-content: center;
+    span:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        box-shadow: 0 0 40px #43E5DA;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        @include transition(.3s);
+        animation: animate 6s linear infinite;
+        background: $theme-color;
+    }
+    span:nth-child(2) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border: 1px solid $black;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        @include transition(.3s);
+        animation: animate 4s linear infinite;
+        background: $theme-color;
+    }
+    span:nth-child(3) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        box-shadow: 0 0 10px #25BEF5;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        @include transition(.3s);
+        animation: animate2 10s linear infinite;
+        background: $theme-color;
+    }
+}
+
+@keyframes animate {
+    0% {
+        @include transform(rotate(0deg));
+    }
+    100% {
+        @include transform(rotate(360deg));
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        @include transform(rotate(360deg));
+    }
+    100% {
+        @include transform(rotate(0deg));
+    }
+}
+.video-btn {
+    color: $white;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 85px;
+}

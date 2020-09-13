@@ -1,0 +1,86 @@
+/*Template css*/
+.template__box {
+    .thumb {
+        position: relative;
+        &::after {
+            bottom: 0px;
+            background: #E8E8E8;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            opacity: 0;
+            visibility: hidden;
+            @include transition(.3s);
+            @include transform(scale(.5));
+        }
+        .link {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include transform(translate(-50%, -50%));
+            opacity: 0;
+            visibility: hidden;
+            z-index: 2;
+            img {
+                padding-right: 10px;
+                @include transform(translateY(-5px));
+            }
+            span {
+                position: relative;
+                font-size: 21px;
+                font-weight: 700;
+                color: $white;
+                @include transition(.3s);
+                &:hover {
+                    color: $theme-color;
+                }
+                &::after {
+                    bottom: 0px;
+                    background: $white;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    content: "";
+                }
+            }
+        }
+    }
+    .content {
+        background: $white;
+        padding: 30px;
+        border-radius: 0px 0px 10px 10px;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+        .tags {
+            a {
+                color: #09DBD1;
+                font-size: 14px;
+                font-weight: 500;
+                &:hover {
+                    color: $theme-color;
+                }
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    &:hover {
+        .thumb {
+            &::after {
+                opacity: .30;
+                visibility: visible;
+                @include transform(scale(1));
+            }
+            .link {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
