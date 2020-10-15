@@ -33,19 +33,19 @@
     <![endif]-->
 
     <!-- header area start -->
-    <header class="site-header d-none">
+    <header class="site-header transparent">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3">
+                <div class="col-xl-3 my-auto">
                     <a href="index.html" class="site-logo">
                         <img src="assets/images/logo/logo.png" alt="">
                     </a>
                 </div>
-                <div class="col-xl-9">
+                <div class="col-xl-9 my-auto">
                     <div class="mainmenu">
                         <nav>
                             <ul>
-                                <li><a href="#0">Services</a>
+                                <li><a href="service.html">Services</a>
                                     <ul>
                                         <li><a href="#0">Services 01</a></li>
                                         <li><a href="#0">Services 02</a></li>
@@ -119,86 +119,260 @@
                                 <li>Price</li>
                             </ul>
                         </div>
-                        <div class="pricing-build bg_img" data-background="assets/images/bg/pricing-bg.jpeg">
-                            <ul>
-                                <li>4883</li>
-                                <li>32 GB SSD</li>
-                                <li>1 CPU</li>
-                                <li>1024 MB</li>
-                                <li>1 TB</li>
-                                <li>$6/mo</li>
-                                <li>$6/mo</li>
-                                <li><img src="assets/images/icons/arrow-round-light.png" alt=""></li>
-                            </ul>
-                            <div class="row justify-content-center">
-                                <div class="col-xl-7">
-                                    <div class="build-server text-center">
-                                        <a href="#0" class="site-btn">Build Own Server</a>
+                        <div class="accordion" id="accordionFaq">
+                            <div class="card bg_img" data-background="assets/images/bg/pricing-bg.jpeg">
+                                <div class="card-header" id="heading1">
+                                    <h5 class="mb-0 subtitle">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1"
+                                            aria-expanded="true" aria-controls="collapse1">
+                                            <div class="pricing-list">
+                                                <ul>
+                                                    <li>4883</li>
+                                                    <li>32 GB SSD</li>
+                                                    <li>1 CPU</li>
+                                                    <li>1024 MB</li>
+                                                    <li>1 TB</li>
+                                                    <li>$6/mo</li>
+                                                    <li>
+                                                        <img class="hover" src="assets/images/icons/arrow-round-light.png" alt="">
+                                                        <img class="default" src="assets/images/icons/arrow-round.png" alt="">
+                                                </li>
+                                                </ul>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionFaq" style="">
+                                    <div class="card-body">
+                                        <div class="pricing-build">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-7">
+                                                    <div class="build-server text-center">
+                                                        <a href="#0" class="site-btn">Build Own Server</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li>4883</li>
-                                <li>32 GB SSD</li>
-                                <li>1 CPU</li>
-                                <li>1024 MB</li>
-                                <li>1 TB</li>
-                                <li>$6/mo</li>
-                                <li>$6/mo</li>
-                                <li><img src="assets/images/icons/arrow-round.png" alt=""></li>
-                            </ul>
-                            <ul>
-                                <li>4883</li>
-                                <li>32 GB SSD</li>
-                                <li>1 CPU</li>
-                                <li>1024 MB</li>
-                                <li>1 TB</li>
-                                <li>$6/mo</li>
-                                <li>$6/mo</li>
-                                <li><img src="assets/images/icons/arrow-round.png" alt=""></li>
-                            </ul>
-                            <ul>
-                                <li>4883</li>
-                                <li>32 GB SSD</li>
-                                <li>1 CPU</li>
-                                <li>1024 MB</li>
-                                <li>1 TB</li>
-                                <li>$6/mo</li>
-                                <li>$6/mo</li>
-                                <li><img src="assets/images/icons/arrow-round.png" alt=""></li>
-                            </ul>
-                            <ul>
-                                <li>4883</li>
-                                <li>32 GB SSD</li>
-                                <li>1 CPU</li>
-                                <li>1024 MB</li>
-                                <li>1 TB</li>
-                                <li>$6/mo</li>
-                                <li>$6/mo</li>
-                                <li><img src="assets/images/icons/arrow-round.png" alt=""></li>
-                            </ul>
-                            <ul>
-                                <li>4883</li>
-                                <li>32 GB SSD</li>
-                                <li>1 CPU</li>
-                                <li>1024 MB</li>
-                                <li>1 TB</li>
-                                <li>$6/mo</li>
-                                <li>$6/mo</li>
-                                <li><img src="assets/images/icons/arrow-round.png" alt=""></li>
-                            </ul>
-                            <ul>
-                                <li>4883</li>
-                                <li>32 GB SSD</li>
-                                <li>1 CPU</li>
-                                <li>1024 MB</li>
-                                <li>1 TB</li>
-                                <li>$6/mo</li>
-                                <li>$6/mo</li>
-                                <li><img src="assets/images/icons/arrow-round.png" alt=""></li>
-                            </ul>
+                            <div class="card bg_img" data-background="assets/images/bg/pricing-bg.jpeg">
+                                <div class="card-header" id="heading2">
+                                    <h5 class="mb-0 subtitle">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2"
+                                            aria-expanded="false" aria-controls="collapse2">
+                                            <div class="pricing-list">
+                                                <ul>
+
+                                                    <li>4995</li>
+                                                    <li>64 GB SSD</li>
+                                                    <li>1 CPU</li>
+                                                    <li>2GB</li>
+                                                    <li>1 TB</li>
+                                                    <li>$6/mo</li>
+                                                    <li>
+                                                        <img class="hover" src="assets/images/icons/arrow-round-light.png" alt="">
+                                                        <img class="default" src="assets/images/icons/arrow-round.png" alt="">
+                                                </li>
+                                                </ul>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionFaq">
+                                    <div class="card-body">
+                                        <div class="pricing-build">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-7">
+                                                    <div class="build-server text-center">
+                                                        <a href="#0" class="site-btn">Build Own Server</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg_img" data-background="assets/images/bg/pricing-bg.jpeg">
+                                <div class="card-header" id="heading3">
+                                    <h5 class="mb-0 subtitle">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3"
+                                            aria-expanded="false" aria-controls="collapse3">
+                                            <div class="pricing-list">
+                                                <ul>
+                                                    <li>4883</li>
+                                                    <li>32 GB SSD</li>
+                                                    <li>1 CPU</li>
+                                                    <li>1024 MB</li>
+                                                    <li>1 TB</li>
+                                                    <li>$6/mo</li>
+                                                    <li>
+                                                        <img class="hover" src="assets/images/icons/arrow-round-light.png" alt="">
+                                                        <img class="default" src="assets/images/icons/arrow-round.png" alt="">
+                                                </li>
+                                                </ul>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionFaq">
+                                    <div class="card-body">
+                                        <div class="pricing-build">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-7">
+                                                    <div class="build-server text-center">
+                                                        <a href="#0" class="site-btn">Build Own Server</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg_img" data-background="assets/images/bg/pricing-bg.jpeg">
+                                <div class="card-header" id="heading4">
+                                    <h5 class="mb-0 subtitle">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4"
+                                            aria-expanded="false" aria-controls="collapse4">
+                                            <div class="pricing-list">
+                                                <ul>
+                                                    <li>4883</li>
+                                                    <li>32 GB SSD</li>
+                                                    <li>1 CPU</li>
+                                                    <li>1024 MB</li>
+                                                    <li>1 TB</li>
+                                                    <li>$6/mo</li>
+                                                    <li>
+                                                        <img class="hover" src="assets/images/icons/arrow-round-light.png" alt="">
+                                                        <img class="default" src="assets/images/icons/arrow-round.png" alt="">
+                                                </li>
+                                                </ul>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionFaq">
+                                    <div class="card-body">
+                                        <div class="pricing-build">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-7">
+                                                    <div class="build-server text-center">
+                                                        <a href="#0" class="site-btn">Build Own Server</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg_img" data-background="assets/images/bg/pricing-bg.jpeg">
+                                <div class="card-header" id="heading5">
+                                    <h5 class="mb-0 subtitle">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse5"
+                                            aria-expanded="false" aria-controls="collapse5">
+                                            <div class="pricing-list">
+                                                <ul>
+                                                    <li>4883</li>
+                                                    <li>32 GB SSD</li>
+                                                    <li>1 CPU</li>
+                                                    <li>1024 MB</li>
+                                                    <li>1 TB</li>
+                                                    <li>$6/mo</li>
+                                                    <li>
+                                                        <img class="hover" src="assets/images/icons/arrow-round-light.png" alt="">
+                                                        <img class="default" src="assets/images/icons/arrow-round.png" alt="">
+                                                </li>
+                                                </ul>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionFaq">
+                                    <div class="card-body">
+                                        <div class="pricing-build">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-7">
+                                                    <div class="build-server text-center">
+                                                        <a href="#0" class="site-btn">Build Own Server</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg_img" data-background="assets/images/bg/pricing-bg.jpeg">
+                                <div class="card-header" id="heading6">
+                                    <h5 class="mb-0 subtitle">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse6"
+                                            aria-expanded="false" aria-controls="collapse6">
+                                            <div class="pricing-list">
+                                                <ul>
+                                                    <li>4883</li>
+                                                    <li>32 GB SSD</li>
+                                                    <li>1 CPU</li>
+                                                    <li>1024 MB</li>
+                                                    <li>1 TB</li>
+                                                    <li>$6/mo</li>
+                                                    <li>
+                                                        <img class="hover" src="assets/images/icons/arrow-round-light.png" alt="">
+                                                        <img class="default" src="assets/images/icons/arrow-round.png" alt="">
+                                                </li>
+                                                </ul>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionFaq">
+                                    <div class="card-body">
+                                        <div class="pricing-build">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-7">
+                                                    <div class="build-server text-center">
+                                                        <a href="#0" class="site-btn">Build Own Server</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg_img" data-background="assets/images/bg/pricing-bg.jpeg">
+                                <div class="card-header" id="heading7">
+                                    <h5 class="mb-0 subtitle">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse7"
+                                            aria-expanded="false" aria-controls="collapse7">
+                                            <div class="pricing-list">
+                                                <ul>
+                                                    <li>4883</li>
+                                                    <li>32 GB SSD</li>
+                                                    <li>1 CPU</li>
+                                                    <li>1024 MB</li>
+                                                    <li>1 TB</li>
+                                                    <li>$6/mo</li>
+                                                    <li>
+                                                        <img class="hover" src="assets/images/icons/arrow-round-light.png" alt="">
+                                                        <img class="default" src="assets/images/icons/arrow-round.png" alt="">
+                                                </li>
+                                                </ul>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionFaq">
+                                    <div class="card-body">
+                                        <div class="pricing-build">
+                                            <div class="row justify-content-center">
+                                                <div class="col-xl-7">
+                                                    <div class="build-server text-center">
+                                                        <a href="#0" class="site-btn">Build Own Server</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -421,6 +595,7 @@
     <script src="assets/js/comp.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/scrollwatch.js"></script>
+    <script src="assets/js/sticky-header.js"></script>
     <script src="assets/js/waypoint.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

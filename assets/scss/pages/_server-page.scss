@@ -62,7 +62,6 @@
         .build-server {
             padding-top: 25px;
             border-top: 1px solid $white;
-            margin-top: 45px;
         }
         .site-btn {
             border-color: $white;
@@ -79,9 +78,10 @@
             padding-top: 30px;
             @include d-flex;
             justify-content: space-between;
+            border-bottom: 1px solid #E1E1E1;
             li {
                 font-weight: 700;
-                font-size: 30px;
+                font-size: 28px;
                 color: $black;
                 line-height: 21px;
             }
@@ -128,4 +128,74 @@
             font-size: 16px;
         }
     }
+}
+
+.accordion .card-body {
+    padding: 0;
+}
+
+.accordion .card-header {
+    padding: 0;
+}
+
+.accordion button.btn {
+    padding: 0;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.accordion .pricing-list {
+    padding: 0;
+}
+
+.accordion .collapsed {
+    background: #fff;
+}
+
+.btn {
+    border: 0px;
+    border-radius: 0px;
+    .pricing-list ul li {
+        color: #fff;
+    }
+    .default {
+        display: inline-block;
+    }
+    .hover {
+        display: none;
+    }
+}
+.btn.collapsed {
+    .pricing-list ul li {
+        color: #222;
+    }
+}
+
+.accordion  {
+    .card {
+        border: 0px !important;
+        border-radius: 0px !important;
+    }
+}
+
+button[aria-expanded="true"] {
+    background: transparent !important;
+    .pricing-list ul {
+        border-bottom: transparent;
+        li {
+            color: #fff !important;
+        }
+    }
+    .default {
+        display: none;
+    }
+    .hover {
+        display: inline-block;
+    }
+}
+
+.card-header {
+    border-radius: 0px;
+    border: 0px;
 }

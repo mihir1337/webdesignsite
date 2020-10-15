@@ -1665,6 +1665,24 @@ h6 {
   z-index: 2;
 }
 
+.site-header.transparent {
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 2;
+}
+.site-header.transparent::after {
+  position: absolute;
+  width: 100%;
+  content: "";
+  background: #000;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+}
+
 /* Navigation css */
 .mainmenu ul {
   display: flex;
@@ -1753,6 +1771,22 @@ h6 {
   cursor: pointer;
   margin: 0 auto;
   transform: translateX(-2px);
+}
+
+.transparent .mainmenu ul li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.site-header.sticky-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+  -webkit-box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.1);
 }
 
 /* form css start */
@@ -2713,7 +2747,6 @@ input[type=range]::-moz-range-track {
 .pricing-wrap .pricing-build .build-server {
   padding-top: 25px;
   border-top: 1px solid #ffffff;
-  margin-top: 45px;
 }
 .pricing-wrap .pricing-build .site-btn {
   border-color: #ffffff;
@@ -2734,10 +2767,11 @@ input[type=range]::-moz-range-track {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 1px solid #E1E1E1;
 }
 .pricing-wrap .pricing-list ul li {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
   color: #000;
   line-height: 21px;
 }
@@ -2779,6 +2813,73 @@ input[type=range]::-moz-range-track {
   padding-left: 15px;
   font-weight: 700;
   font-size: 16px;
+}
+
+.accordion .card-body {
+  padding: 0;
+}
+
+.accordion .card-header {
+  padding: 0;
+}
+
+.accordion button.btn {
+  padding: 0;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.accordion .pricing-list {
+  padding: 0;
+}
+
+.accordion .collapsed {
+  background: #fff;
+}
+
+.btn {
+  border: 0px;
+  border-radius: 0px;
+}
+.btn .pricing-list ul li {
+  color: #fff;
+}
+.btn .default {
+  display: inline-block;
+}
+.btn .hover {
+  display: none;
+}
+
+.btn.collapsed .pricing-list ul li {
+  color: #222;
+}
+
+.accordion .card {
+  border: 0px !important;
+  border-radius: 0px !important;
+}
+
+button[aria-expanded=true] {
+  background: transparent !important;
+}
+button[aria-expanded=true] .pricing-list ul {
+  border-bottom: transparent;
+}
+button[aria-expanded=true] .pricing-list ul li {
+  color: #fff !important;
+}
+button[aria-expanded=true] .default {
+  display: none;
+}
+button[aria-expanded=true] .hover {
+  display: inline-block;
+}
+
+.card-header {
+  border-radius: 0px;
+  border: 0px;
 }
 
 /*Footer css*/

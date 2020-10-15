@@ -116,5 +116,10 @@
 		watcher.pulse();
 	});
 
+	// offcanvas menu
+	$(function() {
+		$('.btn-link').addClass('collapsed');
+	});
+
 })(jQuery);
 

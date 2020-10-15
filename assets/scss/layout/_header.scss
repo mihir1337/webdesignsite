@@ -5,3 +5,22 @@
     top: 50px;
     z-index: 2;
 }
+
+.site-header.transparent {
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 2;
+    &::after {
+        position: absolute;
+        width: 100%;
+        content: "";
+        background: $black;
+        opacity: .5;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+    }
+}
+
