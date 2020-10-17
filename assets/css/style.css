@@ -2996,6 +2996,148 @@ button[aria-expanded=true] .hover {
   margin-top: 30px;
 }
 
+/*Contact page css*/
+.get-membership-section {
+  padding-top: 150px;
+}
+.get-membership-section .title {
+  font-size: 30px;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.get-membership-section ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.get-membership-section ul li {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.get-membership-section ul li:not(:last-child) {
+  margin-right: 50px;
+}
+.get-membership-section ul li i {
+  margin-right: 8px;
+  color: #00E4C6;
+}
+
+.register-now {
+  position: relative;
+}
+.register-now .content {
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+.register-now .content h2 {
+  color: #FF005A;
+  font-weight: 900;
+  font-size: 26px;
+  text-align: left;
+}
+.register-now .content h1 {
+  color: #FF005A;
+  font-weight: 900;
+  font-size: 92px;
+  line-height: 95px;
+  margin-top: 10px;
+}
+.register-now .site-btn {
+  color: #222;
+  margin-top: 45px;
+}
+.register-now .site-btn:hover {
+  color: #ffffff;
+}
+
+.contact-form-section {
+  margin-top: 200px;
+}
+.contact-form-section .section-title {
+  margin-bottom: 100px;
+}
+.contact-form-section .section-title h2 {
+  font-size: 30px;
+  font-weight: 900;
+}
+.contact-form-section .section-title p {
+  font-size: 14px;
+  color: #FF005A;
+}
+
+.contact-form {
+  margin-bottom: 100px;
+}
+.contact-form .upload-wrap {
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 15px;
+  padding-bottom: 10px;
+}
+.contact-form .upload {
+  border: 1px solid #222;
+  border-radius: 10px;
+  min-height: 245px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form .upload input {
+  display: none;
+}
+.contact-form .upload label {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+.contact-form textarea {
+  background: #EDEDED;
+  min-height: 245px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #222;
+  margin-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+.contact-form textarea::-webkit-input-placeholder {
+  color: #222 !important;
+  opacity: 1;
+}
+.contact-form textarea::-moz-placeholder {
+  color: #222 !important;
+  opacity: 1;
+}
+.contact-form textarea:-ms-input-placeholder {
+  color: #222 !important;
+  opacity: 1;
+}
+.contact-form textarea:-moz-placeholder {
+  color: #222 !important;
+  opacity: 1;
+}
+.contact-form .row input {
+  width: 100%;
+  border: 1px solid #222;
+  margin-top: 20px;
+  border-radius: 0px;
+  background: #222222;
+  font-size: 14px;
+}
+.contact-form .row .site-btn {
+  padding: 9px 30px;
+  color: #222;
+}
+
+/*Product css*/
 /*Footer css*/
 .site-footer {
   background: #222222;
