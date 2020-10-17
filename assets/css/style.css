@@ -2882,6 +2882,120 @@ button[aria-expanded=true] .hover {
   border: 0px;
 }
 
+/*About page css*/
+.about__banner {
+  padding: 300px 0px;
+}
+.about__banner::before {
+  background-image: url(../images/bg/about-banner-overlay.png);
+}
+.about__banner .text {
+  position: relative;
+}
+.about__banner .text h2 {
+  color: #ffffff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  top: 50%;
+  transform: translate(-50%, -25%);
+  text-transform: uppercase;
+  left: 50%;
+}
+
+.about-us .title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+.about-us strong {
+  font-weight: 800;
+}
+
+.team-carousel-wrap .title {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 41px;
+  color: #00E4C7;
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+
+.team-carousel .owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+.team-carousel .owl-nav div {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.team-carousel .owl-nav div.owl-prev img {
+  margin-right: 8px;
+}
+.team-carousel .owl-nav div.owl-next {
+  margin-left: 35px;
+}
+.team-carousel .owl-nav div.owl-next img {
+  margin-left: 8px;
+}
+
+.single-team-box .content {
+  margin-top: 20px;
+}
+.single-team-box .content .name {
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
+.single-team-box .content p {
+  font-size: 500;
+}
+
+.more-about-content .title {
+  text-align: right;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 41px;
+  color: #00E4C7;
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+
+.about-more h2 {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.about-more p {
+  line-height: 36px;
+}
+
+.join-tem .title {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 41px;
+  color: #00E4C7;
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+.join-tem .free-quote {
+  margin-top: 30px;
+}
+
 /*Footer css*/
 .site-footer {
   background: #222222;

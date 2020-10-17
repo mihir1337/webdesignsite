@@ -1,0 +1,129 @@
+/*About page css*/
+.about__banner {
+    padding: 300px 0px;
+    &::before {
+        background-image: url(../images/bg/about-banner-overlay.png);
+    }
+    .text {
+        position: relative;
+        h2 {
+            color: $white;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 800;
+            top: 50%;
+            transform: translate(-50%,-25%);
+            text-transform: uppercase;
+            left: 50%;
+        }
+    }
+}
+
+.about-us {
+    .title {
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 900;
+        display: inline-block;
+        margin-bottom: 35px;
+    }
+    strong {
+        font-weight: 800;
+    }
+}
+
+.team-carousel-wrap {
+    .title {
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 41px;
+        color: #00E4C7;
+        text-transform: uppercase;
+        margin-top: 45px;
+        margin-bottom: 60px;
+    }
+}
+
+.team-carousel {
+    .owl-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        top: -40px;
+        right: 0;
+        div {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        div.owl-prev {
+            img {
+                margin-right: 8px;
+            }
+        }
+        div.owl-next {
+            margin-left: 35px;
+            img {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+.single-team-box {
+    .content {
+        margin-top: 20px;
+        .name {
+            font-weight: 900;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 500;
+        }
+    }
+}
+
+.more-about-content {
+    .title {
+        text-align: right;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 41px;
+        color: #00E4C7;
+        text-transform: uppercase;
+        margin-top: 45px;
+        margin-bottom: 60px;
+    }
+}
+
+.about-more {
+    h2 {
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    p {
+        line-height: 36px;
+    }
+}
+
+.join-tem {
+    .title {
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 41px;
+        color: #00E4C7;
+        text-transform: uppercase;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+    .free-quote {
+        margin-top: 30px;
+    }
+}

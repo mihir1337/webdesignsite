@@ -87,6 +87,19 @@
 		dots: false,
 	});
 
+	// partner
+	var teamcarousel = $('.team-carousel');
+	teamcarousel.owlCarousel({
+		items: 3,
+		loop: true,
+		margin: 30,
+		loop: true,
+		slideSpeed: 3000,
+		nav: true,
+		dots: false,
+		navText: ["<img src='assets/images/icons/caret-1.png'> Prev", "Next <img src='assets/images/icons/caret-2.png'>"],
+	});
+
 	// Activate lightcase
 	$('a[data-rel^=lightcase]').lightcase();
 
