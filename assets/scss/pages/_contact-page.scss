@@ -118,6 +118,9 @@
         .site-btn {
             padding: 9px 30px;
             color: #222;
+            &:hover {
+                color: $white;
+            }
         }
     }
 }
