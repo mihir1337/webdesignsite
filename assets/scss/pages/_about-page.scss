@@ -4,8 +4,17 @@
     &::before {
         background-image: url(../images/bg/about-banner-overlay.png);
     }
+    @include respond(xs) {
+        padding: 200px 0px;
+    }
+    @include respond(sm) {
+        padding: 200px 0px;
+    }
     .text {
         position: relative;
+        @include respond(lg) {
+            text-align: center;
+        }
         h2 {
             color: $white;
             position: absolute;
@@ -17,6 +26,12 @@
             transform: translate(-50%,-25%);
             text-transform: uppercase;
             left: 50%;
+            @include respond(xs) {
+                font-size: 20px;
+            }
+            @include respond(sm) {
+                font-size: 30px;
+            }
         }
     }
 }

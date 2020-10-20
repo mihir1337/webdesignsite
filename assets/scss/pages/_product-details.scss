@@ -29,8 +29,10 @@
     margin: 45px 0px;
     .tags {
         ul {
-            display: flex;
+            @include d-flex;
+            margin-top: -10px;
             li {
+                margin-top: 10px;
                 &:not(:last-child) {
                     margin-right: 5px;
                 }
@@ -48,6 +50,9 @@
     }
     .social {
         display: flex;
+        @include respond(xs) {
+            margin-top: 20px;
+        }
         a {
             width: 30px;
             font-size: 14px;
@@ -80,6 +85,13 @@
             @include d-flex;
             .thumb {
                 @include flexWidth(15%);
+                @include respond(xs) {
+                    @include flexWidth(30%);
+                    margin-bottom: 15px;
+                }
+                @include respond(sm) {
+                    @include flexWidth(100%);
+                }
             }
             .content {
                 @include flexWidth(85%);
@@ -153,6 +165,9 @@
 }
 
 .side-bar {
+    @include respond(lg) {
+        margin-top: 50px;
+    }
     .info {
         margin-top: 70px;
         ul {

@@ -13,6 +13,9 @@
             }
         }
     }
+    @include respond(lg) {
+        margin-bottom: 50px;
+    }
 }
 
 .service-content {
@@ -78,6 +81,10 @@
     .site-btn {
         color: $primary-color;
         margin-left: 15px;
+        @include respond(xs) {
+            margin-left: 0px;
+            margin-top: 30px;
+        }
         &:hover {
             color: $white;
         }
@@ -155,6 +162,14 @@
                 left: auto;
                 right: 0;
             }
+        }
+    }
+}
+.review-section {
+    .text-right {
+        @include respond(lg) {
+            text-align: left !important;
+            margin-top: 30px;
         }
     }
 }

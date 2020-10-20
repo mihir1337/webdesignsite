@@ -12,9 +12,11 @@
     ul {
         @include d-flex;
         justify-content: center;
+        margin-top: -15px;
         li {
             font-weight: 600;
             text-transform: uppercase;
+            margin-top: 15px;
             &:not(:last-child) {
                 margin-right: 50px;
             }
@@ -32,11 +34,23 @@
         position: absolute;
         right: 0;
         top: 40px;
+        @include respond(xs) {
+            top: 60px;
+        }
+        @include respond(sm) {
+            top: 50px;
+        }
         h2 {
             color: #FF005A;
             font-weight: 900;
             font-size: 26px;
             text-align: left;
+            @include respond(xs) {
+                font-size: 18px;
+            }
+            @include respond(sm) {
+                font-size: 20px;
+            }
         }
         h1 {
             color: #FF005A;
@@ -44,6 +58,12 @@
             font-size: 92px;
             line-height: 95px;
             margin-top: 10px;
+            @include respond(xs) {
+                font-size: 40px;
+            }
+            @include respond(sm) {
+                font-size: 50px;
+            }
         }
     }
     .site-btn {
@@ -85,6 +105,12 @@
         @include d-flex;
         align-items: center;
         justify-content: center;
+        @include respond(xs) {
+                margin-bottom: 20px;
+        }
+        @include respond(sm) {
+            margin-bottom: 20px;
+        }
         input {
             display: none;
         }

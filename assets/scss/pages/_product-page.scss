@@ -35,6 +35,9 @@
 .portfolio-filter {
     @include d-flex;
     align-items: center;
+    @include respond(xs) {
+        margin-top: -15px;
+    }
     button {
         font-size: 18px;
         background: transparent;
@@ -43,6 +46,14 @@
         display: block;
         border-radius: 5px;
         @include transition(.2s);
+        @include respond(xs) {
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        @include respond(sm) {
+            font-size: 16px;
+            margin-top: 0px;
+        }
         &:not(:last-child) {
             margin-right: 5px;
         }

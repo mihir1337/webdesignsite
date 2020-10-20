@@ -138,3 +138,33 @@
         }
     }
 }
+
+#app {
+    @include respond(lg) {
+        background-position: right;
+    }
+    .row {
+        @include respond(lg) {
+            flex-direction: column-reverse;
+        }
+    }
+    .app-ss {
+        @include respond(lg) {
+            margin-top: 50px;
+        }
+    }
+}
+
+#web {
+    .row {
+        @include respond(lg) {
+            flex-direction: column-reverse;
+        }
+    }
+    .web-ss {
+        @include respond(lg) {
+            text-align: left !important;
+            margin-bottom: 50px;
+        }
+    }
+}

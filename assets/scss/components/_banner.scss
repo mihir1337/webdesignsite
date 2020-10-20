@@ -4,18 +4,42 @@
     position: relative;
     padding-top: 300px;
     padding-bottom: 285px;
-    height: 800px;
+    @include respond(lg) {
+        padding-top: 200px;
+        padding-bottom: 230px;
+    }
+    @include respond(xs) {
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+    @include respond(sm) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .bg-video {
     position: absolute;
-    right: 0px;
     top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    z-index: -1;
     overflow: hidden;
-    height: 800px;
-    video {
+    &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
         width: 100%;
+        height: 100%;
+        background: #222;
+        opacity: .5;
+    }
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -26,6 +50,13 @@
         line-height: 36px;
         margin-bottom: 25px;
         color: $white;
+        @include respond(xs) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        @include respond(sm) {
+            font-size: 28px;
+        }
     }
     p {
         font-size: 16px;
@@ -36,13 +67,40 @@
         margin-top: 45px;
         display: flex;
         align-items: center;
+        @include respond(xs) {
+            margin-top: 30px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        @include respond(sm) {
+            margin-top: 45px;
+            flex-direction: row;
+            align-items: center;
+        }
         .transparent {
             margin-left: 45px;
+            @include respond(xs) {
+                margin-left: 00px;
+                margin-top: 15px;
+            }
+            @include respond(sm) {
+                margin-left: 35px;
+                margin-top: 0px;
+            }
             &:hover {
                 color: $theme-color;
             }
             &:hover::after {
                 display: none;
+            }
+        }
+        .site-btn {
+            @include respond(xs) {
+                font-size: 12px;
+            }
+            @include respond(sm) {
+                font-size: 14px;
             }
         }
     }

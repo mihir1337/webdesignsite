@@ -45,6 +45,10 @@
 .review {
     @include d-flex;
     align-items: center;
+    @include respond(lg) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
     p {
         font-size: 14px;
         font-weight: 300;
@@ -58,6 +62,9 @@
 .whatsapp {
     @include d-flex;
     align-items: center;
+    @include respond(lg) {
+        justify-content: center;
+    }
     p {
         font-size: 18px;
         font-weight: 300;
@@ -72,6 +79,10 @@
     @include d-flex;
     align-items: center;
     justify-content: flex-end;
+    @include respond(lg) {
+        justify-content: center;
+        margin-top: 50px;
+    }
     p {
         color: $white;
         font-size: 18px;
@@ -106,6 +117,9 @@
 .copyright-text {
     margin-bottom: 25px;
     text-align: right;
+    @include respond(lg) {
+        text-align: center;
+    }
     p {
         color: $white;
         font-size: 11px;

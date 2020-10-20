@@ -2,6 +2,9 @@
 .template__box {
     .thumb {
         position: relative;
+        img {
+            width: 100%;
+        }
         &::after {
             bottom: 0px;
             background: #E8E8E8;
@@ -26,6 +29,7 @@
             img {
                 padding-right: 10px;
                 @include transform(translateY(-5px));
+                width: auto;
             }
             span {
                 position: relative;

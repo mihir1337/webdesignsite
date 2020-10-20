@@ -36,6 +36,7 @@
 		nav: true,
 		dots: false,
 	});
+
 	// bannerSlide 
 	var serviceslide = $('.service-slide');
 	serviceslide.owlCarousel({
@@ -51,6 +52,7 @@
 		nav: true,
 		dots: false,
 	});
+
 	var quickslide = $('.quick-view-img');
 	quickslide.owlCarousel({
 		items: 1,
@@ -74,6 +76,19 @@
 		slideSpeed: 3000,
 		nav: false,
 		dots: false,
+		responsiveClass:true,
+	    responsive: {
+	    	0: {
+				items: 1,
+				margin: 0
+	    	},
+	    	575: {
+	    		items: 2
+	    	},
+	    	992: {
+	    		items: 3
+	    	}
+	    }
 	});
 	// partner
 	var testimonial = $('.testimonial');
@@ -98,6 +113,19 @@
 		nav: true,
 		dots: false,
 		navText: ["<img src='assets/images/icons/caret-1.png'> Prev", "Next <img src='assets/images/icons/caret-2.png'>"],
+		responsiveClass:true,
+		responsive: {
+			0: {
+				items: 1,
+				margin: 0
+			},
+			768: {
+				items: 2
+			},
+			1200: {
+				items: 3
+			}
+		}
 	});
 
 	// Activate lightcase
@@ -159,6 +187,15 @@
 		$(this).siblings('.active').removeClass('active');
 		$(this).addClass('active');
 		event.preventDefault();
+	});
+
+	// offcanvas menu
+	$(".menu-tigger").on("click", function () {
+		$(".extra-info,.offcanvas-overly").addClass("active");
+		return false;
+	});
+	$(".menu-close,.offcanvas-overly").on("click", function () {
+		$(".extra-info,.offcanvas-overly").removeClass("active");
 	});
 
 })(jQuery);
