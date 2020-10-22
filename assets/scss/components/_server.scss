@@ -9,11 +9,25 @@
     }
     .icon {
         padding-right: 10px;
+        -webkit-animation: 1s shake infinite;
+	        animation: 1s shake infinite;
     }
     span {
         padding-left: 10px;
         img {
             transform: translateY(3px);
+            @include transition(.3s);
+        }
+    }
+    &:hover {
+        a {
+            color: $theme-color;
+        }
+        span {
+            img {
+                @include transform(translate(5px, 3px))
+            }
         }
     }
 }
+

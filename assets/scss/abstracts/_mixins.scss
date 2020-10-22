@@ -76,6 +76,52 @@
 	}
 }
 
+@-webkit-keyframes shake {
+	0% {
+		@include transform(rotate(7deg));
+	}
+	50% {
+		@include transform(rotate(0deg));
+	}
+	100% {
+		@include transform(rotate(7deg));
+	}
+}
+@keyframes shake {
+	0% {
+		@include transform(rotate(7deg));
+	}
+	50% {
+		@include transform(rotate(0deg));
+	}
+	100% {
+		@include transform(rotate(7deg));
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		@include transform(translateY(5px));
+	}
+	50% {
+		@include transform(translateY(0px));
+	}
+	100% {
+		@include transform(translateY(5px));
+	}
+}
+@keyframes down {
+	0% {
+		@include transform(translateY(5px));
+	}
+	50% {
+		@include transform(translateY(0px));
+	}
+	100% {
+		@include transform(translateY(5px));
+	}
+}
+
 @mixin respond($breakpoint) {
     @if $breakpoint==laptop {
         @media only screen and (min-width: 1200px) and (max-width: 1500px) {
