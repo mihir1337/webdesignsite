@@ -35,7 +35,6 @@
     }
     p {
         line-height: 21px;
-        font-weight: 500;
         a {
             font-weight: 600;
             color: $primary-color;
@@ -70,7 +69,6 @@
 
 .service__box.bold {
     p {
-        font-weight: 500;
         line-height: 21px;
     }
 }
@@ -171,5 +169,11 @@
             text-align: left !important;
             margin-top: 30px;
         }
+    }
+}
+
+.justify {
+    p {
+        text-align: justify;
     }
 }

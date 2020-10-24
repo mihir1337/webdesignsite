@@ -3060,7 +3060,6 @@ input[type=range]::-moz-range-track {
 }
 .service-content p {
   line-height: 21px;
-  font-weight: 500;
 }
 .service-content p a {
   font-weight: 600;
@@ -3089,7 +3088,6 @@ input[type=range]::-moz-range-track {
 }
 
 .service__box.bold p {
-  font-weight: 500;
   line-height: 21px;
 }
 
@@ -3183,6 +3181,10 @@ input[type=range]::-moz-range-track {
     text-align: left !important;
     margin-top: 30px;
   }
+}
+
+.justify p {
+  text-align: justify;
 }
 
 /*Server page css*/
