@@ -2717,6 +2717,11 @@ input[type=range]::-moz-range-track {
   }
 }
 @media (max-width: 1199px) {
+  #app .esolution {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 1199px) {
   #app .row {
     flex-direction: column-reverse;
   }
@@ -3048,7 +3053,7 @@ input[type=range]::-moz-range-track {
   font-size: 32px;
   font-weight: 900;
   line-height: 32px;
-  display: inline-block;
+  display: block;
   margin-bottom: 30px;
 }
 .service-content .sub-title {
@@ -3057,9 +3062,7 @@ input[type=range]::-moz-range-track {
   display: inline-block;
   margin-bottom: 15px;
   text-transform: uppercase;
-}
-.service-content p {
-  line-height: 21px;
+  display: block;
 }
 .service-content p a {
   font-weight: 600;
@@ -3082,13 +3085,6 @@ input[type=range]::-moz-range-track {
   font-size: 22px;
   font-weight: 900;
   margin-bottom: 20px;
-}
-.service__box p {
-  line-height: 25px;
-}
-
-.service__box.bold p {
-  line-height: 21px;
 }
 
 .free-quote {

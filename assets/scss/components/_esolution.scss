@@ -143,6 +143,11 @@
     @include respond(lg) {
         background-position: right;
     }
+    .esolution {
+        @include respond(lg) {
+            padding-bottom: 50px;
+        }
+    }
     .row {
         @include respond(lg) {
             flex-direction: column-reverse;
